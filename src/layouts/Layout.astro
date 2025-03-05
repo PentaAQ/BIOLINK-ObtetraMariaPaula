@@ -24,15 +24,31 @@ import "../styles/global.css";
     <script
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Google Analytics -->
+
     <title>Obstetra Maria Paula</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DEP67EBF50"
+    ></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-DEP67EBF50");
+    </script>
   </head>
+
   <body>
     <slot />
   </body>
 </html>
 
 <style is:global>
-  html{
+  html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
