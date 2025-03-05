@@ -2,18 +2,32 @@
 import ButtonCard from "./ButtonCard.astro";
 ---
 
-<div
-  class="flex flex-col gap-3 h-full grow basis-0"
->
+<div class="flex flex-col gap-3 h-full grow basis-0">
   <h2
-    class="text-white font-bold font-[Poppins] text-xs flex flex-col items-center gap-1 md:text-2xl lg:text-base" 
+    class="text-white font-bold font-[Poppins] text-xs flex flex-col items-center gap-1 md:text-2xl lg:text-base"
   >
     💖 Cuidado especializado en el bienestar femenino✨<span>🌸</span>
   </h2>
   <div class="flex flex-wrap items-center justify-evenly h-full w-full">
-    <ButtonCard logoName="facebook">Únete a la comunidad</ButtonCard>
-    <ButtonCard logoName="instagram">Explora nuestro mundo</ButtonCard>
-    <ButtonCard logoName="whatsapp">¡Agenda tu cita!</ButtonCard>
-    <ButtonCard logoName="tiktok">Sorpréndete con nosotros</ButtonCard>
+    <ButtonCard
+      logoName="facebook"
+      url="https://www.facebook.com/profile.php?id=61565478266093"
+      >Únete a la comunidad</ButtonCard
+    >
+    <ButtonCard
+      logoName="instagram"
+      url="https://www.instagram.com/obstetramariapaula/"
+      >Explora nuestro mundo</ButtonCard
+    >
+    <ButtonCard
+      logoName="whatsapp"
+      url="https://api.whatsapp.com/send?phone=%2B51989795686&context=ARCbC5om5fczSnZ8YOKVZKPBDoP0NFQAvyja-yPmeXsIG-tChamRurzMocHNaWXzLuUSTg08BRJ-kVSrsLR38L2Fiyspk8OsU9OeEqo_WIk9ldk3vhWZCuYP8iu_XoSD2WV1kG1vRtWnfnTbdLyneQOmSg&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawH59OxleHRuA2FlbQIxMAABHX_Cgv7_4d-V_Zupv_Ub-3PD_pYa-EL2KpvijB8apt5Vs88j0wCIv6Ojjg_aem_KMFf05TNDeovTPkXDyiewA"
+      >¡Agenda tu cita!</ButtonCard
+    >
+    <ButtonCard
+      logoName="tiktok"
+      url="https://www.tiktok.com/@obstetramariapaula?_t=ZM-8tCWOYvS1hd&_r=1"
+      >Sorpréndete con nosotros</ButtonCard
+    >
   </div>
 </div>

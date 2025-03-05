@@ -1,17 +1,21 @@
 ---
-const { logoName } = Astro.props;
+const { logoName, url } = Astro.props;
 ---
 
-<div class="bg-white px-15 py-5 w-[90%] md:w-[70%] rounded-2xl h-[76px] md:py-1 flex items-center lg:w-[90%]">
+<a
+  class="bg-white px-15 py-5 w-[90%] md:w-[70%] rounded-2xl h-[76px] md:py-1 flex items-center lg:w-[90%] hover:scale-105 duration-300"
+  href={url}
+>
   <p class="flex items-center gap-4 justify-center">
     <ion-icon
       name=`logo-${logoName}`
-      class="text-[#BF1F77] text-4xl md:text-5xl">
+      class="text-[#BF1F77] text-4xl md:text-5xl"
+    >
     </ion-icon>
     <div
       class="text-[#BF1F77] font-bold mr-auto ml-auto text-center text-sm md:text-2xl w-full lg:text-lg"
     >
       <slot />
-  </div>
+    </div>
   </p>
-</div>
+</a>
