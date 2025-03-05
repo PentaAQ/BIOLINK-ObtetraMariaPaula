@@ -1,0 +1,16 @@
+---
+const { logoName } = Astro.props;
+---
+
+<div
+  class="md:w-[70%] bg-white p-5 rounded-2xl text-[#BF1F77] font-bold font-[Poppins] lg:text-[80%] flex text-2xl w-full"
+>
+  <p class="flex items-center flex-row">
+    <ion-icon
+      name=`logo-${logoName}`
+      class="w-[40px] lg:h-[30px] pr-3 text-9xl h-[50px]"></ion-icon>
+    <div class="flex items-center mr-auto ml-auto text-[16px] lg:text-[13px] md:text-2xl">
+      <slot />
+    </div>
+  </p>
+</div>
